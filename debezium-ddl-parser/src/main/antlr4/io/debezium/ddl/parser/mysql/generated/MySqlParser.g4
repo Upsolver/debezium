@@ -1945,7 +1945,7 @@ fullColumnName
     ;
 
 indexColumnName
-    : (uid | STRING_LITERAL) ('(' decimalLiteral ')')? sortType=(ASC | DESC)?
+    : ((uid | STRING_LITERAL) ('(' decimalLiteral ')')? | '(' expression ')' ) sortType=(ASC | DESC)?
     ;
 
 userName
